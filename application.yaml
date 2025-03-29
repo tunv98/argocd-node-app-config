@@ -3,6 +3,8 @@ kind: Application
 metadata:
   name: node-app-argo-application
   namespace: argocd
+data:
+  repo.server.git.poll.interval: 30s #reduce check time to 30s
 spec:
   project: default
 
